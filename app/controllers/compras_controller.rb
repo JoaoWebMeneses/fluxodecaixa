@@ -3,7 +3,7 @@ class ComprasController < ApplicationController
 
   # GET /compras or /compras.json
   def index
-    @compras = Compra.all
+    @compras = Compra.paginate(page: params[:page])
   end
 
   # GET /compras/1 or /compras/1.json

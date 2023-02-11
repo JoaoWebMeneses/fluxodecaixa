@@ -1,6 +1,7 @@
 <p style="color: green"><%= notice %></p>
 
 <h1>Compras</h1>
+<%= will_paginate @compras %>
 
 <div id="compras">
   <% @compras.each do |compra| %>
